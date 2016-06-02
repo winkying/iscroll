@@ -263,10 +263,10 @@ var utils = (function () {
 			ev.initEvent('click', true, true);
 			ev.view = e.view || window;
 			ev.detail = 1;
-			ev.screenX = target.screenX || 0;
-			ev.screenY = target.screenY || 0;
-			ev.clientX = target.clientX || 0;
-			ev.clientY = target.clientY || 0;
+			ev.screenX = e.screenX || 0;
+			ev.screenY = e.screenY || 0;
+			ev.clientX = e.clientX || 0;
+			ev.clientY = e.clientY || 0;
 			ev.ctrlKey = !!e.ctrlKey;
 			ev.altKey = !!e.altKey;
 			ev.shiftKey = !!e.shiftKey;
